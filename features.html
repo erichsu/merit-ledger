@@ -408,18 +408,14 @@
         <!-- 實際功能展示區 -->
         <section class="live-demo-section">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">實際功能展示</h2>
-                    <p class="section-subtitle">體驗真實的系統操作界面</p>
-                </div>
-
                 <!-- 蓮友管理系統展示 -->
                 <div class="demo-panel" id="member-management-demo" style="display: none;">
-                    <div class="demo-panel-header">
-                        <h3>蓮友基本資料管理系統</h3>
-                        <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
-                    </div>
-                    <div class="demo-panel-content">
+                    <div class="demo-panel-container">
+                        <div class="demo-panel-header">
+                            <h3>蓮友基本資料管理系統</h3>
+                            <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
+                        </div>
+                        <div class="demo-panel-content">
                         <div class="demo-toolbar">
                             <button class="demo-btn primary" onclick="showAddMemberForm()">新增蓮友</button>
                             <input type="text" class="demo-search" placeholder="搜尋蓮友姓名、電話..." onkeyup="searchMembers(this.value)">
@@ -494,16 +490,18 @@
                             <span class="demo-page-info">第 1 頁，共 3 頁</span>
                             <button class="demo-btn outline">下一頁 »</button>
                         </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- 功德報名系統展示 -->
                 <div class="demo-panel" id="merit-system-demo" style="display: none;">
-                    <div class="demo-panel-header">
-                        <h3>法會功德報名系統</h3>
-                        <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
-                    </div>
-                    <div class="demo-panel-content">
+                    <div class="demo-panel-container">
+                        <div class="demo-panel-header">
+                            <h3>法會功德報名系統</h3>
+                            <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
+                        </div>
+                        <div class="demo-panel-content">
                         <div class="demo-form-container">
                             <div class="demo-form-section">
                                 <h4>法會資訊</h4>
@@ -599,16 +597,18 @@
                                 <button class="demo-btn outline" onclick="resetMeritForm()">重新填寫</button>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- 繳費系統展示 -->
                 <div class="demo-panel" id="payment-system-demo" style="display: none;">
-                    <div class="demo-panel-header">
-                        <h3>繳費管理系統</h3>
-                        <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
-                    </div>
-                    <div class="demo-panel-content">
+                    <div class="demo-panel-container">
+                        <div class="demo-panel-header">
+                            <h3>繳費管理系統</h3>
+                            <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
+                        </div>
+                        <div class="demo-panel-content">
                         <div class="demo-payment-tabs">
                             <button class="demo-tab active" onclick="showPaymentTab('unpaid')">待繳費</button>
                             <button class="demo-tab" onclick="showPaymentTab('paid')">已繳費</button>
@@ -722,16 +722,18 @@
                                 </table>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- 掛單住宿系統展示 -->
                 <div class="demo-panel" id="accommodation-system-demo" style="display: none;">
-                    <div class="demo-panel-header">
-                        <h3>掛單住宿管理系統</h3>
-                        <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
-                    </div>
-                    <div class="demo-panel-content">
+                    <div class="demo-panel-container">
+                        <div class="demo-panel-header">
+                            <h3>掛單住宿管理系統</h3>
+                            <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
+                        </div>
+                        <div class="demo-panel-content">
                         <div class="demo-accommodation-layout">
                             <div class="demo-room-calendar">
                                 <h4>房間配置圖</h4>
@@ -861,16 +863,18 @@
                                 </table>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- 雙分院管理展示 -->
                 <div class="demo-panel" id="temple-management-demo" style="display: none;">
-                    <div class="demo-panel-header">
-                        <h3>雙分院管理系統</h3>
-                        <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
-                    </div>
-                    <div class="demo-panel-content">
+                    <div class="demo-panel-container">
+                        <div class="demo-panel-header">
+                            <h3>雙分院管理系統</h3>
+                            <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
+                        </div>
+                        <div class="demo-panel-content">
                         <div class="demo-temple-selector">
                             <h4>分院選擇</h4>
                             <div class="demo-temple-options">
@@ -990,11 +994,12 @@
 
                 <!-- 系統管理展示 -->
                 <div class="demo-panel" id="system-management-demo" style="display: none;">
-                    <div class="demo-panel-header">
-                        <h3>系統管理</h3>
-                        <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
-                    </div>
-                    <div class="demo-panel-content">
+                    <div class="demo-panel-container">
+                        <div class="demo-panel-header">
+                            <h3>系統管理</h3>
+                            <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
+                        </div>
+                        <div class="demo-panel-content">
                         <div class="demo-system-tabs">
                             <button class="demo-tab active" onclick="showSystemTab('users')">使用者管理</button>
                             <button class="demo-tab" onclick="showSystemTab('roles')">權限管理</button>
@@ -1133,6 +1138,7 @@
                                 </table>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1252,8 +1258,14 @@
                     // 添加點擊效果
                     this.classList.add('animate-pulse');
                     
-                    // 取得功能名稱
+                    // 取得功能名稱和演示面板ID
                     const feature = this.getAttribute('data-feature');
+                    const demoId = this.getAttribute('data-demo');
+                    
+                    // 如果有演示面板ID，打開對應的面板
+                    if (demoId) {
+                        openDemoPanel(demoId);
+                    }
                     
                     // 根據功能顯示不同內容
                     let detailContent = '';
@@ -1334,9 +1346,260 @@
                     // 移除動畫效果
                     setTimeout(() => {
                         this.classList.remove('animate-pulse');
-                    }, 2000);
+                    }, 600);
                 });
             });
+        });
+
+        // 開啟演示面板
+        function openDemoPanel(demoId) {
+            const panel = document.getElementById(demoId + '-demo');
+            if (panel) {
+                panel.style.display = 'flex';
+                // 強制重新渲染以觸發動畫
+                setTimeout(() => {
+                    panel.classList.add('active');
+                }, 10);
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        // 關閉演示面板
+        function closeDemoPanel() {
+            const panels = document.querySelectorAll('.demo-panel');
+            panels.forEach(panel => {
+                panel.classList.remove('active');
+                // 等待動畫完成後隱藏
+                setTimeout(() => {
+                    panel.style.display = 'none';
+                }, 300);
+            });
+            document.body.style.overflow = 'auto';
+        }
+
+        // 點擊背景關閉面板
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('demo-panel')) {
+                closeDemoPanel();
+            }
+        });
+
+        // ESC鍵關閉面板
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeDemoPanel();
+            }
+        });
+
+        // 演示功能函數
+        function searchMembers(query) {
+            // 模擬搜尋功能
+            console.log('搜尋蓮友:', query);
+        }
+
+        function filterByGroup(group) {
+            // 模擬群組篩選功能
+            console.log('篩選群組:', group);
+        }
+
+        function editMember(memberId) {
+            alert('編輯蓮友: ' + memberId);
+        }
+
+        function viewMemberHistory(memberId) {
+            alert('查看蓮友歷史: ' + memberId);
+        }
+
+        function showAddMemberForm() {
+            alert('顯示新增蓮友表單');
+        }
+
+        function loadMeritItems(dharmaId) {
+            // 模擬載入功德項目
+            console.log('載入功德項目:', dharmaId);
+        }
+
+        function searchMembersForMerit(query) {
+            const suggestions = document.getElementById('member-suggestions');
+            if (query.length > 0) {
+                suggestions.style.display = 'block';
+            } else {
+                suggestions.style.display = 'none';
+            }
+        }
+
+        function selectMember(name, id) {
+            const input = document.querySelector('input[placeholder="請輸入姓名搜尋"]');
+            const phoneInput = document.getElementById('member-phone');
+            input.value = name;
+            phoneInput.value = '0912-345-678'; // 模擬電話號碼
+            document.getElementById('member-suggestions').style.display = 'none';
+        }
+
+        function calculateTotal() {
+            const checkboxes = document.querySelectorAll('.demo-merit-item input[type="checkbox"]:checked');
+            let total = 0;
+            checkboxes.forEach(checkbox => {
+                total += parseInt(checkbox.value);
+            });
+            document.getElementById('total-amount').textContent = 'NT$ ' + total.toLocaleString();
+        }
+
+        function submitMeritRegistration() {
+            alert('功德報名提交成功！');
+        }
+
+        function resetMeritForm() {
+            document.querySelectorAll('.demo-merit-item input[type="checkbox"]').forEach(checkbox => {
+                checkbox.checked = false;
+            });
+            calculateTotal();
+        }
+
+        function showPaymentTab(tab) {
+            // 隱藏所有標籤內容
+            document.querySelectorAll('.demo-tab-content').forEach(content => {
+                content.style.display = 'none';
+            });
+            
+            // 移除所有標籤的活動狀態
+            document.querySelectorAll('.demo-tab').forEach(tabBtn => {
+                tabBtn.classList.remove('active');
+            });
+            
+            // 顯示對應的標籤內容
+            document.getElementById(tab + '-tab').style.display = 'block';
+            
+            // 設置對應標籤為活動狀態
+            event.target.classList.add('active');
+        }
+
+        function processBatchPayment() {
+            alert('批次收款處理中...');
+        }
+
+        function processPayment(regId) {
+            alert('處理收款: ' + regId);
+        }
+
+        function sendReminder(regId) {
+            alert('發送催繳通知: ' + regId);
+        }
+
+        function selectAllPayments(checkbox) {
+            const checkboxes = document.querySelectorAll('.payment-checkbox');
+            checkboxes.forEach(cb => {
+                cb.checked = checkbox.checked;
+            });
+        }
+
+        function selectRoom(roomId) {
+            // 移除所有房間的選擇狀態
+            document.querySelectorAll('.demo-room').forEach(room => {
+                room.classList.remove('selected');
+            });
+            
+            // 選擇當前房間
+            const selectedRoom = document.querySelector(`[data-room="${roomId}"]`);
+            if (selectedRoom && selectedRoom.classList.contains('available')) {
+                selectedRoom.classList.add('selected');
+                document.getElementById('selected-room').value = roomId;
+            }
+        }
+
+        function filterRoomsByGender(gender) {
+            // 模擬根據性別篩選房間
+            console.log('篩選房間性別:', gender);
+        }
+
+        function searchMembersForAccommodation(query) {
+            // 模擬搜尋蓮友
+            console.log('搜尋住宿蓮友:', query);
+        }
+
+        function submitAccommodationBooking() {
+            alert('掛單登記提交成功！');
+        }
+
+        function resetAccommodationForm() {
+            document.querySelectorAll('.demo-room').forEach(room => {
+                room.classList.remove('selected');
+            });
+            document.getElementById('selected-room').value = '';
+        }
+
+        function extendStay(roomId) {
+            alert('延長住宿: ' + roomId);
+        }
+
+        function checkOut(roomId) {
+            alert('辦理退房: ' + roomId);
+        }
+
+        function switchTemple(templeId) {
+            // 移除所有分院卡片的活動狀態
+            document.querySelectorAll('.demo-temple-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            
+            // 設置當前分院為活動狀態
+            document.querySelector(`[data-temple="${templeId}"]`).classList.add('active');
+            
+            // 更新儀表板標題
+            const title = templeId === 'main' ? '本山' : '台中分院';
+            document.getElementById('temple-dashboard-title').textContent = title + ' - 管理儀表板';
+        }
+
+        function syncData(dataType) {
+            alert('同步資料: ' + dataType);
+        }
+
+        function showSystemTab(tab) {
+            // 隱藏所有標籤內容
+            document.querySelectorAll('.demo-tab-content').forEach(content => {
+                content.style.display = 'none';
+            });
+            
+            // 移除所有標籤的活動狀態
+            document.querySelectorAll('.demo-tab').forEach(tabBtn => {
+                tabBtn.classList.remove('active');
+            });
+            
+            // 顯示對應的標籤內容
+            document.getElementById(tab + '-tab').style.display = 'block';
+            
+            // 設置對應標籤為活動狀態
+            event.target.classList.add('active');
+        }
+
+        function addUser() {
+            alert('新增使用者');
+        }
+
+        function editUser(userId) {
+            alert('編輯使用者: ' + userId);
+        }
+
+        function resetPassword(userId) {
+            alert('重設密碼: ' + userId);
+        }
+
+        function searchLogs() {
+            alert('搜尋操作日誌');
+        }
+
+        // 點擊面板背景關閉面板
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('demo-panel')) {
+                closeDemoPanel();
+            }
+        });
+
+        // ESC 鍵關閉面板
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeDemoPanel();
+            }
         });
     </script>
 </body>
