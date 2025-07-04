@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>功能展示 - 功德辦理系統</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-circle">
+                    <span class="logo-text">功德</span>
+                </div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">首頁</a>
+                <a href="features.html" class="nav-link active">功能展示</a>
+                <a href="architecture.html" class="nav-link">系統架構</a>
+                <a href="pricing.html" class="nav-link">專案報價</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要內容 -->
+    <main>
+        <!-- 頁面標題 -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">功能展示</h1>
+                <p class="page-subtitle">探索完整的功德辦理系統功能模組</p>
+            </div>
+        </section>
+
+        <!-- 功能分類導航 -->
+        <section class="feature-nav">
+            <div class="container">
+                <div class="feature-nav-wrapper">
+                    <button class="module-button active" data-target="core">核心功能模組</button>
+                    <button class="module-button" data-target="support">支援功能模組</button>
+                    <button class="module-button" data-target="integration">整合功能</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心功能模組 -->
+        <section class="feature-showcase module-content" id="core-modules">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">核心功能模組</h2>
+                    <p class="section-subtitle">提供寺院日常運作所需的基礎管理功能</p>
+                </div>
+
+                <div class="showcase-grid">
+                    <!-- 基本資料管理模組 -->
+                    <div class="showcase-item">
+                        <div class="showcase-circle">
+                            <span class="showcase-icon">👥</span>
+                        </div>
+                        <div class="showcase-content">
+                            <h3>基本資料管理模組</h3>
+                            <p>完整的蓮友資料管理系統，支援多層級群組結構與複雜關聯</p>
+                            <ul class="showcase-features">
+                                <li>蓮友基本資料管理（姓名、性別、生日、電話等）</li>
+                                <li>群組樹狀結構管理（可設定多層級群組）</li>
+                                <li>皈依資訊管理（法號、皈依時間、皈依證書）</li>
+                                <li>關聯群組功能（依業務需求設定群組間關係）</li>
+                                <li>資料查詢與統計功能（多條件組合搜尋）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 法會功德系統 -->
+                    <div class="showcase-item">
+                        <div class="showcase-circle">
+                            <span class="showcase-icon">📿</span>
+                        </div>
+                        <div class="showcase-content">
+                            <h3>法會功德系統</h3>
+                            <p>全方位法會規劃與功德管理，簡化牌位作業流程</p>
+                            <ul class="showcase-features">
+                                <li>法會基本資料管理（法會名稱、時間、地點等）</li>
+                                <li>功德項目建立（牌位種類、價格、牌位格式）</li>
+                                <li>牌位資料管理（功德主、附薦人、功德項目）</li>
+                                <li>歷史法會資料查詢與沿用功能</li>
+                                <li>牌位列印（單張列印、批次列印）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 報名繳費系統 -->
+                    <div class="showcase-item">
+                        <div class="showcase-circle">
+                            <span class="showcase-icon">💳</span>
+                        </div>
+                        <div class="showcase-content">
+                            <h3>報名繳費系統</h3>
+                            <p>智能化的功德報名與繳費管理，支援多種繳費方式</p>
+                            <ul class="showcase-features">
+                                <li>功德報名處理（線上報名、現場報名整合）</li>
+                                <li>繳費金額管理（收費標準設定、繳費查詢）</li>
+                                <li>繳費方式管理（現金、信用卡、轉帳等）</li>
+                                <li>收據管理（自動編號、收據列印）</li>
+                                <li>自動續立功能（到期提醒、歷史資料沿用）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 掛單住宿系統 -->
+                    <div class="showcase-item">
+                        <div class="showcase-circle">
+                            <span class="showcase-icon">🏠</span>
+                        </div>
+                        <div class="showcase-content">
+                            <h3>掛單住宿系統</h3>
+                            <p>完整的寮房管理與住宿安排，提升住宿管理效率</p>
+                            <ul class="showcase-features">
+                                <li>寮房床位設定（房間類型、床位數量）</li>
+                                <li>掛單登記管理（入住登記、退房處理）</li>
+                                <li>住宿證列印（單張、批次列印）</li>
+                                <li>入住統計分析（使用率、入住趨勢等）</li>
+                                <li>預訂管理（提前預訂、取消處理）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 法物管理系統 -->
+                    <div class="showcase-item">
+                        <div class="showcase-circle">
+                            <span class="showcase-icon">🏮</span>
+                        </div>
+                        <div class="showcase-content">
+                            <h3>法物管理系統</h3>
+                            <p>高效率的法物庫存與銷售管理，庫存自動化追蹤</p>
+                            <ul class="showcase-features">
+                                <li>法物資料管理（法物分類、基本資料）</li>
+                                <li>庫存管理（入庫、出庫、庫存警告）</li>
+                                <li>銷售管理（銷售記錄、統計報表）</li>
+                                <li>預訂管理（預訂登記、取貨處理）</li>
+                                <li>進貨管理（供應商資料、進貨紀錄）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 供養管理系統 -->
+                    <div class="showcase-item">
+                        <div class="showcase-circle">
+                            <span class="showcase-icon">🙏</span>
+                        </div>
+                        <div class="showcase-content">
+                            <h3>供養管理系統</h3>
+                            <p>全面性的供養紀錄與感謝狀管理，強化捐贈者關係</p>
+                            <ul class="showcase-features">
+                                <li>供養紀錄管理（供養類型、金額、用途）</li>
+                                <li>定期供養管理（月供、年供、自動扣款）</li>
+                                <li>感謝狀製作（個人化感謝狀、自動產生）</li>
+                                <li>供養統計分析（趨勢分析、捐款來源）</li>
+                                <li>供養回饋管理（回饋紀錄、提醒功能）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 支援功能模組 -->
+        <section class="feature-showcase module-content" id="support-modules" style="display: none;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">支援功能模組</h2>
+                    <p class="section-subtitle">提供核心功能所需的支援與輔助功能</p>
+                </div>
+
+                <div class="showcase-grid">
+                    <!-- 系統管理模組 -->
+                    <div class="showcase-item">
+                        <div class="showcase-circle">
+                            <span class="showcase-icon">⚙️</span>
+                        </div>
+                        <div class="showcase-content">
+                            <h3>系統管理模組</h3>
+                            <p>全方位的系統設定與維護功能，確保系統穩定運行</p>
+                            <ul class="showcase-features">
+                                <li>使用者管理（帳號建立、權限設定）</li>
+                                <li>角色權限管理（角色定義、功能授權）</li>
+                                <li>系統參數設定（全局參數、業務規則）</li>
+                                <li>操作日誌查詢（使用者行為追蹤）</li>
+                                <li>備份還原功能（定期備份、災難復原）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 報表管理模組 -->
+                    <div class="showcase-item">
+                        <div class="showcase-circle">
+                            <span class="showcase-icon">📊</span>
+                        </div>
+                        <div class="showcase-content">
+                            <h3>報表管理模組</h3>
+                            <p>強大的報表生成與資料分析工具，支援多種格式輸出</p>
+                            <ul class="showcase-features">
+                                <li>統計報表管理（預設報表、自訂報表）</li>
+                                <li>資料匯出功能（Excel、PDF、CSV格式）</li>
+                                <li>圖表視覺化呈現（長條圖、圓餅圖、趨勢圖）</li>
+                                <li>批次列印功能（多報表整合列印）</li>
+                                <li>報表排程功能（定期自動產生報表）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 雙分院管理模組 -->
+                    <div class="showcase-item">
+                        <div class="showcase-circle">
+                            <span class="showcase-icon">🏯</span>
+                        </div>
+                        <div class="showcase-content">
+                            <h3>雙分院管理模組</h3>
+                            <p>本山與台中分院資料隔離與共享機制，確保業務獨立性</p>
+                            <ul class="showcase-features">
+                                <li>分院資料隔離（獨立資料存取權限）</li>
+                                <li>共用資料管理（資料同步與共享機制）</li>
+                                <li>跨分院查詢功能（整合式資料查詢）</li>
+                                <li>分院權限管理（分院專屬功能設定）</li>
+                                <li>資料合併統計（整合式數據分析）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 通知提醒模組 -->
+                    <div class="showcase-item">
+                        <div class="showcase-circle">
+                            <span class="showcase-icon">🔔</span>
+                        </div>
+                        <div class="showcase-content">
+                            <h3>通知提醒模組</h3>
+                            <p>自動化的事件提醒與通知系統，確保重要事項不遺漏</p>
+                            <ul class="showcase-features">
+                                <li>系統內部通知（待辦事項、重要提醒）</li>
+                                <li>電子郵件通知（自動發送、模板設定）</li>
+                                <li>簡訊通知服務（整合簡訊平台）</li>
+                                <li>排程通知設定（定期提醒、活動前通知）</li>
+                                <li>批次通知處理（群發功能、目標群組設定）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 工作流程模組 -->
+                    <div class="showcase-item">
+                        <div class="showcase-circle">
+                            <span class="showcase-icon">📝</span>
+                        </div>
+                        <div class="showcase-content">
+                            <h3>工作流程模組</h3>
+                            <p>可自定義的業務流程管理，實現業務自動化處理</p>
+                            <ul class="showcase-features">
+                                <li>流程定義功能（流程步驟、角色分配）</li>
+                                <li>審批管理（多級審批、授權機制）</li>
+                                <li>任務分派功能（任務指派、進度追蹤）</li>
+                                <li>流程監控儀表板（進度視覺化、瓶頸分析）</li>
+                                <li>自動化處理規則（條件觸發、自動執行）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 整合功能 -->
+        <section class="feature-showcase module-content" id="integration-modules" style="display: none;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">整合功能</h2>
+                    <p class="section-subtitle">實現系統間無縫連接與資料整合</p>
+                </div>
+
+                <div class="showcase-grid">
+                    <!-- API整合介面 -->
+                    <div class="showcase-item">
+                        <div class="showcase-circle">
+                            <span class="showcase-icon">🔄</span>
+                        </div>
+                        <div class="showcase-content">
+                            <h3>API整合介面</h3>
+                            <p>開放式API架構，支援與第三方系統整合</p>
+                            <ul class="showcase-features">
+                                <li>RESTful API接口（標準化資料交換）</li>
+                                <li>GraphQL查詢支援（彈性資料請求）</li>
+                                <li>OAuth2.0驗證機制（安全存取控制）</li>
+                                <li>API管理平台（文檔、測試、監控）</li>
+                                <li>Webhook支援（事件觸發通知）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 行動應用整合 -->
+                    <div class="showcase-item">
+                        <div class="showcase-circle">
+                            <span class="showcase-icon">📱</span>
+                        </div>
+                        <div class="showcase-content">
+                            <h3>行動應用整合</h3>
+                            <p>完善的行動應用連接機制，支援多平台存取</p>
+                            <ul class="showcase-features">
+                                <li>行動API接口（專為行動應用優化）</li>
+                                <li>推播通知整合（即時訊息推送）</li>
+                                <li>離線資料同步（斷線操作支援）</li>
+                                <li>行動裝置管理（裝置註冊、權限控制）</li>
+                                <li>安全存取機制（生物辨識整合、裝置驗證）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 第三方服務整合 -->
+                    <div class="showcase-item">
+                        <div class="showcase-circle">
+                            <span class="showcase-icon">🔌</span>
+                        </div>
+                        <div class="showcase-content">
+                            <h3>第三方服務整合</h3>
+                            <p>預設整合多種外部服務，擴展系統功能範圍</p>
+                            <ul class="showcase-features">
+                                <li>電子支付整合（金流服務、線上付款）</li>
+                                <li>簡訊服務整合（多家簡訊供應商支援）</li>
+                                <li>電子郵件服務（郵件發送API整合）</li>
+                                <li>雲端儲存整合（檔案備份、資源共享）</li>
+                                <li>社群媒體連接（活動分享、登入整合）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 資料匯入匯出 -->
+                    <div class="showcase-item">
+                        <div class="showcase-circle">
+                            <span class="showcase-icon">📤</span>
+                        </div>
+                        <div class="showcase-content">
+                            <h3>資料匯入匯出</h3>
+                            <p>強大的資料交換功能，支援多種格式轉換</p>
+                            <ul class="showcase-features">
+                                <li>批次資料匯入（Excel、CSV格式支援）</li>
+                                <li>資料匯出功能（多格式匯出選項）</li>
+                                <li>資料轉換工具（格式自動轉換）</li>
+                                <li>匯入範本管理（自訂匯入格式）</li>
+                                <li>排程匯入匯出（自動化資料交換）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 功能演示區 -->
+        <section class="feature-demo">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">互動功能演示</h2>
+                    <p class="section-subtitle">點擊圓形元素體驗系統設計理念</p>
+                </div>
+
+                <div class="demo-container">
+                    <div class="demo-circle-wrapper">
+                        <div class="demo-center-circle">
+                            <span class="demo-center-icon">🏛️</span>
+                            <span class="demo-center-text">功德系統</span>
+                        </div>
+                        <div class="demo-orbit">
+                            <div class="demo-circle demo-circle-1" data-feature="基本資料管理" data-demo="member-management">
+                                <span class="demo-icon">👥</span>
+                            </div>
+                            <div class="demo-circle demo-circle-2" data-feature="法會功德系統" data-demo="merit-system">
+                                <span class="demo-icon">📿</span>
+                            </div>
+                            <div class="demo-circle demo-circle-3" data-feature="報名繳費系統" data-demo="payment-system">
+                                <span class="demo-icon">💳</span>
+                            </div>
+                            <div class="demo-circle demo-circle-4" data-feature="掛單住宿系統" data-demo="accommodation-system">
+                                <span class="demo-icon">🏠</span>
+                            </div>
+                            <div class="demo-circle demo-circle-5" data-feature="雙分院管理" data-demo="temple-management">
+                                <span class="demo-icon">🏯</span>
+                            </div>
+                            <div class="demo-circle demo-circle-6" data-feature="系統管理" data-demo="system-management">
+                                <span class="demo-icon">⚙️</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-info">
+                        <h3 class="demo-info-title">圓形設計理念</h3>
+                        <p class="demo-info-desc">
+                            功德辦理系統採用圓形設計語言，象徵佛法圓融無礙、周而復始的概念。點擊上方圓形元素，體驗系統各功能模組如何環繞核心理念，相互關聯卻又獨立運作，共同構成完整的功德管理解決方案。
+                        </p>
+                        <div id="demo-detail" class="demo-detail">
+                            <p>請點擊任一功能圓形查看詳情</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 實際功能展示區 -->
+        <section class="live-demo-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">實際功能展示</h2>
+                    <p class="section-subtitle">體驗真實的系統操作界面</p>
+                </div>
+
+                <!-- 蓮友管理系統展示 -->
+                <div class="demo-panel" id="member-management-demo" style="display: none;">
+                    <div class="demo-panel-header">
+                        <h3>蓮友基本資料管理系統</h3>
+                        <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
+                    </div>
+                    <div class="demo-panel-content">
+                        <div class="demo-toolbar">
+                            <button class="demo-btn primary" onclick="showAddMemberForm()">新增蓮友</button>
+                            <input type="text" class="demo-search" placeholder="搜尋蓮友姓名、電話..." onkeyup="searchMembers(this.value)">
+                            <select class="demo-select" onchange="filterByGroup(this.value)">
+                                <option value="">所有群組</option>
+                                <option value="taipei">台北區</option>
+                                <option value="taichung">台中區</option>
+                                <option value="volunteer">義工群組</option>
+                            </select>
+                        </div>
+                        
+                        <div class="demo-table-container">
+                            <table class="demo-table">
+                                <thead>
+                                    <tr>
+                                        <th>編號</th>
+                                        <th>姓名</th>
+                                        <th>法號</th>
+                                        <th>性別</th>
+                                        <th>電話</th>
+                                        <th>群組</th>
+                                        <th>皈依日期</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="members-table-body">
+                                    <tr>
+                                        <td>L001</td>
+                                        <td>王美玲</td>
+                                        <td>慧心</td>
+                                        <td>女</td>
+                                        <td>0912-345-678</td>
+                                        <td>台北區</td>
+                                        <td>2020-05-15</td>
+                                        <td>
+                                            <button class="demo-btn small" onclick="editMember('L001')">編輯</button>
+                                            <button class="demo-btn small outline" onclick="viewMemberHistory('L001')">歷史</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>L002</td>
+                                        <td>陳志明</td>
+                                        <td>慧德</td>
+                                        <td>男</td>
+                                        <td>0987-654-321</td>
+                                        <td>台中區</td>
+                                        <td>2019-12-08</td>
+                                        <td>
+                                            <button class="demo-btn small" onclick="editMember('L002')">編輯</button>
+                                            <button class="demo-btn small outline" onclick="viewMemberHistory('L002')">歷史</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>L003</td>
+                                        <td>林淑芬</td>
+                                        <td>慧慈</td>
+                                        <td>女</td>
+                                        <td>0955-123-456</td>
+                                        <td>義工群組</td>
+                                        <td>2021-03-22</td>
+                                        <td>
+                                            <button class="demo-btn small" onclick="editMember('L003')">編輯</button>
+                                            <button class="demo-btn small outline" onclick="viewMemberHistory('L003')">歷史</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="demo-pagination">
+                            <button class="demo-btn outline">« 上一頁</button>
+                            <span class="demo-page-info">第 1 頁，共 3 頁</span>
+                            <button class="demo-btn outline">下一頁 »</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 功德報名系統展示 -->
+                <div class="demo-panel" id="merit-system-demo" style="display: none;">
+                    <div class="demo-panel-header">
+                        <h3>法會功德報名系統</h3>
+                        <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
+                    </div>
+                    <div class="demo-panel-content">
+                        <div class="demo-form-container">
+                            <div class="demo-form-section">
+                                <h4>法會資訊</h4>
+                                <div class="demo-form-row">
+                                    <div class="demo-form-group">
+                                        <label>法會名稱</label>
+                                        <select class="demo-select" onchange="loadMeritItems(this.value)">
+                                            <option value="">請選擇法會</option>
+                                            <option value="dharma1">2024年藥師法會</option>
+                                            <option value="dharma2">觀音法會</option>
+                                            <option value="dharma3">地藏法會</option>
+                                        </select>
+                                    </div>
+                                    <div class="demo-form-group">
+                                        <label>法會日期</label>
+                                        <input type="text" class="demo-input" value="2024-12-15 至 2024-12-17" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="demo-form-section">
+                                <h4>蓮友資訊</h4>
+                                <div class="demo-form-row">
+                                    <div class="demo-form-group">
+                                        <label>蓮友姓名</label>
+                                        <input type="text" class="demo-input" placeholder="請輸入姓名搜尋" onkeyup="searchMembersForMerit(this.value)">
+                                        <div class="demo-member-suggestions" id="member-suggestions" style="display: none;">
+                                            <div class="demo-suggestion" onclick="selectMember('王美玲', 'L001')">王美玲 (L001)</div>
+                                            <div class="demo-suggestion" onclick="selectMember('陳志明', 'L002')">陳志明 (L002)</div>
+                                        </div>
+                                    </div>
+                                    <div class="demo-form-group">
+                                        <label>聯絡電話</label>
+                                        <input type="text" class="demo-input" id="member-phone" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="demo-form-section">
+                                <h4>功德項目</h4>
+                                <div class="demo-merit-items" id="merit-items-container">
+                                    <div class="demo-merit-item">
+                                        <input type="checkbox" id="merit1" value="1000" onchange="calculateTotal()">
+                                        <label for="merit1">
+                                            <span class="merit-name">消災延壽牌位</span>
+                                            <span class="merit-amount">NT$ 1,000</span>
+                                        </label>
+                                    </div>
+                                    <div class="demo-merit-item">
+                                        <input type="checkbox" id="merit2" value="800" onchange="calculateTotal()">
+                                        <label for="merit2">
+                                            <span class="merit-name">祈福牌位</span>
+                                            <span class="merit-amount">NT$ 800</span>
+                                        </label>
+                                    </div>
+                                    <div class="demo-merit-item">
+                                        <input type="checkbox" id="merit3" value="600" onchange="calculateTotal()">
+                                        <label for="merit3">
+                                            <span class="merit-name">光明燈</span>
+                                            <span class="merit-amount">NT$ 600</span>
+                                        </label>
+                                    </div>
+                                    <div class="demo-merit-item">
+                                        <input type="checkbox" id="merit4" value="300" onchange="calculateTotal()">
+                                        <label for="merit4">
+                                            <span class="merit-name">供花</span>
+                                            <span class="merit-amount">NT$ 300</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="demo-form-section">
+                                <h4>迴向資訊</h4>
+                                <div class="demo-form-group">
+                                    <label>迴向對象</label>
+                                    <textarea class="demo-textarea" placeholder="請輸入迴向對象姓名，每行一個"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="demo-form-section">
+                                <div class="demo-total-section">
+                                    <h4>費用總計</h4>
+                                    <div class="demo-total-amount">
+                                        <span>總金額：</span>
+                                        <span class="demo-amount" id="total-amount">NT$ 0</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="demo-form-actions">
+                                <button class="demo-btn primary" onclick="submitMeritRegistration()">確認報名</button>
+                                <button class="demo-btn outline" onclick="resetMeritForm()">重新填寫</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 繳費系統展示 -->
+                <div class="demo-panel" id="payment-system-demo" style="display: none;">
+                    <div class="demo-panel-header">
+                        <h3>繳費管理系統</h3>
+                        <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
+                    </div>
+                    <div class="demo-panel-content">
+                        <div class="demo-payment-tabs">
+                            <button class="demo-tab active" onclick="showPaymentTab('unpaid')">待繳費</button>
+                            <button class="demo-tab" onclick="showPaymentTab('paid')">已繳費</button>
+                            <button class="demo-tab" onclick="showPaymentTab('process')">繳費處理</button>
+                        </div>
+
+                        <div class="demo-tab-content" id="unpaid-tab">
+                            <div class="demo-toolbar">
+                                <input type="text" class="demo-search" placeholder="搜尋蓮友、報名編號...">
+                                <select class="demo-select">
+                                    <option value="">所有法會</option>
+                                    <option value="dharma1">2024年藥師法會</option>
+                                    <option value="dharma2">觀音法會</option>
+                                </select>
+                                <button class="demo-btn primary" onclick="processBatchPayment()">批次收款</button>
+                            </div>
+
+                            <div class="demo-table-container">
+                                <table class="demo-table">
+                                    <thead>
+                                        <tr>
+                                            <th><input type="checkbox" onchange="selectAllPayments(this)"></th>
+                                            <th>報名編號</th>
+                                            <th>蓮友姓名</th>
+                                            <th>法會名稱</th>
+                                            <th>功德項目</th>
+                                            <th>應繳金額</th>
+                                            <th>逾期天數</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox" class="payment-checkbox"></td>
+                                            <td>REG20241201001</td>
+                                            <td>王美玲</td>
+                                            <td>2024年藥師法會</td>
+                                            <td>消災延壽牌位</td>
+                                            <td class="amount">NT$ 1,000</td>
+                                            <td class="overdue">5天</td>
+                                            <td>
+                                                <button class="demo-btn small" onclick="processPayment('REG20241201001')">收款</button>
+                                                <button class="demo-btn small outline" onclick="sendReminder('REG20241201001')">催繳</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="payment-checkbox"></td>
+                                            <td>REG20241201002</td>
+                                            <td>陳志明</td>
+                                            <td>觀音法會</td>
+                                            <td>祈福牌位</td>
+                                            <td class="amount">NT$ 800</td>
+                                            <td class="overdue">2天</td>
+                                            <td>
+                                                <button class="demo-btn small" onclick="processPayment('REG20241201002')">收款</button>
+                                                <button class="demo-btn small outline" onclick="sendReminder('REG20241201002')">催繳</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="demo-payment-summary">
+                                <div class="demo-summary-item">
+                                    <span>待收金額總計：</span>
+                                    <span class="demo-amount">NT$ 1,800</span>
+                                </div>
+                                <div class="demo-summary-item">
+                                    <span>逾期筆數：</span>
+                                    <span class="demo-count">2 筆</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="demo-tab-content" id="paid-tab" style="display: none;">
+                            <div class="demo-toolbar">
+                                <input type="date" class="demo-input" value="2024-12-01">
+                                <span>至</span>
+                                <input type="date" class="demo-input" value="2024-12-31">
+                                <button class="demo-btn outline" onclick="filterPayments()">查詢</button>
+                                <button class="demo-btn primary" onclick="exportPayments()">匯出Excel</button>
+                            </div>
+
+                            <div class="demo-table-container">
+                                <table class="demo-table">
+                                    <thead>
+                                        <tr>
+                                            <th>收據編號</th>
+                                            <th>蓮友姓名</th>
+                                            <th>繳費日期</th>
+                                            <th>繳費金額</th>
+                                            <th>付款方式</th>
+                                            <th>經手人</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>REC20241201001</td>
+                                            <td>林淑芬</td>
+                                            <td>2024-12-01</td>
+                                            <td class="amount">NT$ 1,400</td>
+                                            <td>現金</td>
+                                            <td>管理員</td>
+                                            <td>
+                                                <button class="demo-btn small" onclick="printReceipt('REC20241201001')">列印收據</button>
+                                                <button class="demo-btn small outline" onclick="viewPaymentDetail('REC20241201001')">詳情</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 掛單住宿系統展示 -->
+                <div class="demo-panel" id="accommodation-system-demo" style="display: none;">
+                    <div class="demo-panel-header">
+                        <h3>掛單住宿管理系統</h3>
+                        <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
+                    </div>
+                    <div class="demo-panel-content">
+                        <div class="demo-accommodation-layout">
+                            <div class="demo-room-calendar">
+                                <h4>房間配置圖</h4>
+                                <div class="demo-room-grid">
+                                    <div class="demo-room available" data-room="A101" onclick="selectRoom('A101')">
+                                        <div class="room-header">A101</div>
+                                        <div class="room-type">男眾 4人房</div>
+                                        <div class="room-status">可入住 2床</div>
+                                    </div>
+                                    <div class="demo-room occupied" data-room="A102">
+                                        <div class="room-header">A102</div>
+                                        <div class="room-type">男眾 4人房</div>
+                                        <div class="room-status">已滿</div>
+                                    </div>
+                                    <div class="demo-room available" data-room="B101" onclick="selectRoom('B101')">
+                                        <div class="room-header">B101</div>
+                                        <div class="room-type">女眾 4人房</div>
+                                        <div class="room-status">可入住 3床</div>
+                                    </div>
+                                    <div class="demo-room maintenance" data-room="B102">
+                                        <div class="room-header">B102</div>
+                                        <div class="room-type">女眾 4人房</div>
+                                        <div class="room-status">維護中</div>
+                                    </div>
+                                    <div class="demo-room available" data-room="C101" onclick="selectRoom('C101')">
+                                        <div class="room-header">C101</div>
+                                        <div class="room-type">男眾 2人房</div>
+                                        <div class="room-status">可入住 1床</div>
+                                    </div>
+                                    <div class="demo-room available" data-room="C102" onclick="selectRoom('C102')">
+                                        <div class="room-header">C102</div>
+                                        <div class="room-type">女眾 2人房</div>
+                                        <div class="room-status">可入住 2床</div>
+                                    </div>
+                                </div>
+                                <div class="demo-room-legend">
+                                    <span class="legend-item"><span class="legend-color available"></span>可入住</span>
+                                    <span class="legend-item"><span class="legend-color occupied"></span>已滿</span>
+                                    <span class="legend-item"><span class="legend-color maintenance"></span>維護中</span>
+                                    <span class="legend-item"><span class="legend-color selected"></span>已選擇</span>
+                                </div>
+                            </div>
+
+                            <div class="demo-booking-form">
+                                <h4>掛單登記</h4>
+                                <div class="demo-form-group">
+                                    <label>蓮友姓名</label>
+                                    <input type="text" class="demo-input" placeholder="請輸入姓名" onkeyup="searchMembersForAccommodation(this.value)">
+                                </div>
+                                <div class="demo-form-group">
+                                    <label>性別</label>
+                                    <select class="demo-select" onchange="filterRoomsByGender(this.value)">
+                                        <option value="">請選擇</option>
+                                        <option value="male">男眾</option>
+                                        <option value="female">女眾</option>
+                                    </select>
+                                </div>
+                                <div class="demo-form-group">
+                                    <label>入住日期</label>
+                                    <input type="date" class="demo-input" value="2024-12-15">
+                                </div>
+                                <div class="demo-form-group">
+                                    <label>退房日期</label>
+                                    <input type="date" class="demo-input" value="2024-12-17">
+                                </div>
+                                <div class="demo-form-group">
+                                    <label>選擇房間</label>
+                                    <input type="text" class="demo-input" id="selected-room" placeholder="請點選房間" readonly>
+                                </div>
+                                <div class="demo-form-group">
+                                    <label>相關法會</label>
+                                    <select class="demo-select">
+                                        <option value="">一般掛單</option>
+                                        <option value="dharma1">2024年藥師法會</option>
+                                        <option value="dharma2">觀音法會</option>
+                                    </select>
+                                </div>
+                                <div class="demo-form-group">
+                                    <label>備註</label>
+                                    <textarea class="demo-textarea" placeholder="特殊需求或備註"></textarea>
+                                </div>
+                                <div class="demo-form-actions">
+                                    <button class="demo-btn primary" onclick="submitAccommodationBooking()">確認掛單</button>
+                                    <button class="demo-btn outline" onclick="resetAccommodationForm()">重新填寫</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="demo-current-guests">
+                            <h4>目前住宿狀況</h4>
+                            <div class="demo-table-container">
+                                <table class="demo-table">
+                                    <thead>
+                                        <tr>
+                                            <th>房間</th>
+                                            <th>蓮友姓名</th>
+                                            <th>入住日期</th>
+                                            <th>預計退房</th>
+                                            <th>天數</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>A102</td>
+                                            <td>張三、李四、王五、趙六</td>
+                                            <td>2024-12-10</td>
+                                            <td>2024-12-17</td>
+                                            <td>7天</td>
+                                            <td>
+                                                <button class="demo-btn small" onclick="extendStay('A102')">延住</button>
+                                                <button class="demo-btn small outline" onclick="checkOut('A102')">退房</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>C101</td>
+                                            <td>錢七</td>
+                                            <td>2024-12-12</td>
+                                            <td>2024-12-15</td>
+                                            <td>3天</td>
+                                            <td>
+                                                <button class="demo-btn small" onclick="extendStay('C101')">延住</button>
+                                                <button class="demo-btn small outline" onclick="checkOut('C101')">退房</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 雙分院管理展示 -->
+                <div class="demo-panel" id="temple-management-demo" style="display: none;">
+                    <div class="demo-panel-header">
+                        <h3>雙分院管理系統</h3>
+                        <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
+                    </div>
+                    <div class="demo-panel-content">
+                        <div class="demo-temple-selector">
+                            <h4>分院選擇</h4>
+                            <div class="demo-temple-options">
+                                <div class="demo-temple-card active" data-temple="main" onclick="switchTemple('main')">
+                                    <div class="temple-icon">🏛️</div>
+                                    <div class="temple-name">本山</div>
+                                    <div class="temple-stats">
+                                        <div>蓮友數：1,234</div>
+                                        <div>本月功德：NT$ 456,789</div>
+                                    </div>
+                                </div>
+                                <div class="demo-temple-card" data-temple="taichung" onclick="switchTemple('taichung')">
+                                    <div class="temple-icon">🏯</div>
+                                    <div class="temple-name">台中分院</div>
+                                    <div class="temple-stats">
+                                        <div>蓮友數：567</div>
+                                        <div>本月功德：NT$ 123,456</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="demo-temple-dashboard">
+                            <h4 id="temple-dashboard-title">本山 - 管理儀表板</h4>
+                            <div class="demo-dashboard-grid">
+                                <div class="demo-dashboard-card">
+                                    <h5>本月報名統計</h5>
+                                    <div class="demo-chart">
+                                        <div class="chart-bar" style="height: 60%;" title="藥師法會: 45筆">
+                                            <div class="bar-label">藥師法會</div>
+                                            <div class="bar-value">45</div>
+                                        </div>
+                                        <div class="chart-bar" style="height: 40%;" title="觀音法會: 30筆">
+                                            <div class="bar-label">觀音法會</div>
+                                            <div class="bar-value">30</div>
+                                        </div>
+                                        <div class="chart-bar" style="height: 80%;" title="地藏法會: 60筆">
+                                            <div class="bar-label">地藏法會</div>
+                                            <div class="bar-value">60</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="demo-dashboard-card">
+                                    <h5>掛單住宿統計</h5>
+                                    <div class="demo-occupancy-chart">
+                                        <div class="occupancy-item">
+                                            <span>A棟男眾寮房</span>
+                                            <div class="occupancy-bar">
+                                                <div class="occupancy-fill" style="width: 75%;"></div>
+                                            </div>
+                                            <span>75%</span>
+                                        </div>
+                                        <div class="occupancy-item">
+                                            <span>B棟女眾寮房</span>
+                                            <div class="occupancy-bar">
+                                                <div class="occupancy-fill" style="width: 60%;"></div>
+                                            </div>
+                                            <span>60%</span>
+                                        </div>
+                                        <div class="occupancy-item">
+                                            <span>C棟貴賓房</span>
+                                            <div class="occupancy-bar">
+                                                <div class="occupancy-fill" style="width: 40%;"></div>
+                                            </div>
+                                            <span>40%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="demo-dashboard-card">
+                                    <h5>功德金統計</h5>
+                                    <div class="demo-amount-stats">
+                                        <div class="amount-item">
+                                            <span class="amount-label">本月收入</span>
+                                            <span class="amount-value">NT$ 456,789</span>
+                                        </div>
+                                        <div class="amount-item">
+                                            <span class="amount-label">待收金額</span>
+                                            <span class="amount-value overdue">NT$ 123,456</span>
+                                        </div>
+                                        <div class="amount-item">
+                                            <span class="amount-label">年度累計</span>
+                                            <span class="amount-value">NT$ 5,678,901</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="demo-sync-management">
+                            <h4>資料同步管理</h4>
+                            <div class="demo-sync-options">
+                                <div class="demo-sync-item">
+                                    <div class="sync-info">
+                                        <h5>蓮友基本資料</h5>
+                                        <p>最後同步：2024-12-01 09:30</p>
+                                    </div>
+                                    <button class="demo-btn small" onclick="syncData('members')">立即同步</button>
+                                </div>
+                                <div class="demo-sync-item">
+                                    <div class="sync-info">
+                                        <h5>群組結構</h5>
+                                        <p>最後同步：2024-12-01 09:30</p>
+                                    </div>
+                                    <button class="demo-btn small" onclick="syncData('groups')">立即同步</button>
+                                </div>
+                                <div class="demo-sync-item">
+                                    <div class="sync-info">
+                                        <h5>法會資料</h5>
+                                        <p>本地獨立管理</p>
+                                    </div>
+                                    <button class="demo-btn small disabled">不需同步</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 系統管理展示 -->
+                <div class="demo-panel" id="system-management-demo" style="display: none;">
+                    <div class="demo-panel-header">
+                        <h3>系統管理</h3>
+                        <button class="demo-close-btn" onclick="closeDemoPanel()">×</button>
+                    </div>
+                    <div class="demo-panel-content">
+                        <div class="demo-system-tabs">
+                            <button class="demo-tab active" onclick="showSystemTab('users')">使用者管理</button>
+                            <button class="demo-tab" onclick="showSystemTab('roles')">權限管理</button>
+                            <button class="demo-tab" onclick="showSystemTab('logs')">操作日誌</button>
+                            <button class="demo-tab" onclick="showSystemTab('backup')">備份還原</button>
+                        </div>
+
+                        <div class="demo-tab-content" id="users-tab">
+                            <div class="demo-toolbar">
+                                <button class="demo-btn primary" onclick="addUser()">新增使用者</button>
+                                <input type="text" class="demo-search" placeholder="搜尋使用者...">
+                                <select class="demo-select">
+                                    <option value="">所有角色</option>
+                                    <option value="admin">系統管理員</option>
+                                    <option value="staff">工作人員</option>
+                                    <option value="viewer">唯讀使用者</option>
+                                </select>
+                            </div>
+
+                            <div class="demo-table-container">
+                                <table class="demo-table">
+                                    <thead>
+                                        <tr>
+                                            <th>使用者名稱</th>
+                                            <th>姓名</th>
+                                            <th>角色</th>
+                                            <th>所屬分院</th>
+                                            <th>最後登入</th>
+                                            <th>狀態</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>admin</td>
+                                            <td>系統管理員</td>
+                                            <td>系統管理員</td>
+                                            <td>本山</td>
+                                            <td>2024-12-01 10:30</td>
+                                            <td><span class="status active">啟用</span></td>
+                                            <td>
+                                                <button class="demo-btn small" onclick="editUser('admin')">編輯</button>
+                                                <button class="demo-btn small outline" onclick="resetPassword('admin')">重設密碼</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>staff01</td>
+                                            <td>王小明</td>
+                                            <td>工作人員</td>
+                                            <td>本山</td>
+                                            <td>2024-11-30 16:45</td>
+                                            <td><span class="status active">啟用</span></td>
+                                            <td>
+                                                <button class="demo-btn small" onclick="editUser('staff01')">編輯</button>
+                                                <button class="demo-btn small outline" onclick="resetPassword('staff01')">重設密碼</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>taichung01</td>
+                                            <td>李小華</td>
+                                            <td>工作人員</td>
+                                            <td>台中分院</td>
+                                            <td>2024-11-29 14:20</td>
+                                            <td><span class="status inactive">停用</span></td>
+                                            <td>
+                                                <button class="demo-btn small" onclick="editUser('taichung01')">編輯</button>
+                                                <button class="demo-btn small outline" onclick="resetPassword('taichung01')">重設密碼</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="demo-tab-content" id="logs-tab" style="display: none;">
+                            <div class="demo-toolbar">
+                                <input type="date" class="demo-input" value="2024-12-01">
+                                <span>至</span>
+                                <input type="date" class="demo-input" value="2024-12-01">
+                                <select class="demo-select">
+                                    <option value="">所有操作</option>
+                                    <option value="login">登入</option>
+                                    <option value="create">新增</option>
+                                    <option value="update">修改</option>
+                                    <option value="delete">刪除</option>
+                                </select>
+                                <button class="demo-btn outline" onclick="searchLogs()">查詢</button>
+                            </div>
+
+                            <div class="demo-table-container">
+                                <table class="demo-table">
+                                    <thead>
+                                        <tr>
+                                            <th>時間</th>
+                                            <th>使用者</th>
+                                            <th>操作</th>
+                                            <th>目標</th>
+                                            <th>IP位址</th>
+                                            <th>結果</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2024-12-01 10:30:15</td>
+                                            <td>admin</td>
+                                            <td>登入</td>
+                                            <td>系統</td>
+                                            <td>192.168.1.100</td>
+                                            <td><span class="status success">成功</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2024-12-01 10:25:42</td>
+                                            <td>staff01</td>
+                                            <td>新增</td>
+                                            <td>蓮友資料 (L004)</td>
+                                            <td>192.168.1.101</td>
+                                            <td><span class="status success">成功</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2024-12-01 10:20:18</td>
+                                            <td>staff01</td>
+                                            <td>修改</td>
+                                            <td>功德報名 (REG20241201003)</td>
+                                            <td>192.168.1.101</td>
+                                            <td><span class="status success">成功</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2024-12-01 09:45:33</td>
+                                            <td>unknown</td>
+                                            <td>登入</td>
+                                            <td>系統</td>
+                                            <td>192.168.1.200</td>
+                                            <td><span class="status error">失敗</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <div class="cta-circle">
+                        <div class="cta-icon">🚀</div>
+                    </div>
+                    <h2>想瞭解更多技術細節？</h2>
+                    <p>探索系統架構設計、技術選型與專案實施規劃</p>
+                    <div class="cta-buttons">
+                        <a href="architecture.html" class="btn btn-primary">
+                            <span>系統架構</span>
+                            <div class="btn-icon">→</div>
+                        </a>
+                        <a href="pricing.html" class="btn btn-outline">
+                            <span>查看報價</span>
+                            <div class="btn-icon">💰</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 頁腳 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-circle">
+                            <span class="logo-text">功德</span>
+                        </div>
+                    </div>
+                    <p>專業的功德辦理系統解決方案，致力於寺院數位化轉型。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速連結</h4>
+                    <ul class="footer-links">
+                        <li><a href="features.html">功能展示</a></li>
+                        <li><a href="architecture.html">系統架構</a></li>
+                        <li><a href="pricing.html">專案報價</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>聯絡資訊</h4>
+                    <ul class="footer-contact">
+                        <li>📧 contact@merit-system.com</li>
+                        <li>📞 +886-2-1234-5678</li>
+                        <li>📍 台北市信義區</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>技術支援</h4>
+                    <ul class="footer-links">
+                        <li><a href="#support">技術文件</a></li>
+                        <li><a href="#training">教育訓練</a></li>
+                        <li><a href="#maintenance">維護服務</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 功德辦理系統. 版權所有</p>
+                    <div class="footer-badges">
+                        <span class="tech-badge">Nuxt.js</span>
+                        <span class="tech-badge">GraphQL</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // 功能頁面特定腳本
+        document.addEventListener('DOMContentLoaded', function() {
+            // 模組選項卡切換
+            const moduleButtons = document.querySelectorAll('.module-button');
+            const moduleContents = document.querySelectorAll('.module-content');
+            
+            moduleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // 移除所有按鈕的活動狀態
+                    moduleButtons.forEach(btn => btn.classList.remove('active'));
+                    // 隱藏所有內容
+                    moduleContents.forEach(content => content.style.display = 'none');
+                    
+                    // 設置當前按鈕為活動狀態
+                    this.classList.add('active');
+                    
+                    // 顯示對應的內容區塊
+                    const target = this.getAttribute('data-target');
+                    if (target === 'core') {
+                        document.getElementById('core-modules').style.display = 'block';
+                    } else if (target === 'support') {
+                        document.getElementById('support-modules').style.display = 'block';
+                    } else if (target === 'integration') {
+                        document.getElementById('integration-modules').style.display = 'block';
+                    }
+                });
+            });
+            
+            // 互動演示功能
+            const demoCircles = document.querySelectorAll('.demo-circle');
+            const demoDetail = document.getElementById('demo-detail');
+            
+            demoCircles.forEach(circle => {
+                circle.addEventListener('click', function() {
+                    // 添加點擊效果
+                    this.classList.add('animate-pulse');
+                    
+                    // 取得功能名稱
+                    const feature = this.getAttribute('data-feature');
+                    
+                    // 根據功能顯示不同內容
+                    let detailContent = '';
+                    switch(feature) {
+                        case '基本資料管理':
+                            detailContent = `
+                                <h4>基本資料管理模組</h4>
+                                <p>本模組提供完整的蓮友資料管理功能，支援多層級群組架構，實現複雜的組織關係管理。特別設計能處理寺院特殊的群組關係需求，如皈依關係、家族關係、地區分組等。</p>
+                                <ul>
+                                    <li>多維度資料管理</li>
+                                    <li>彈性群組結構</li>
+                                    <li>全文檢索搜尋</li>
+                                </ul>
+                            `;
+                            break;
+                        case '法會功德系統':
+                            detailContent = `
+                                <h4>法會功德系統</h4>
+                                <p>專為佛教寺院設計的法會管理模組，支援各類法會功德項目設定，簡化牌位管理流程。系統支援批次處理與多種牌位格式，適應不同法會類型需求。</p>
+                                <ul>
+                                    <li>智能牌位管理</li>
+                                    <li>歷史資料沿用</li>
+                                    <li>大量列印支援</li>
+                                </ul>
+                            `;
+                            break;
+                        case '報名繳費系統':
+                            detailContent = `
+                                <h4>報名繳費系統</h4>
+                                <p>整合線上與現場報名流程，提供完整的繳費管理功能。支援多種繳費方式，自動收據產生，以及智能續立提醒，大幅減少行政作業負擔。</p>
+                                <ul>
+                                    <li>多管道報名整合</li>
+                                    <li>繳費狀態追蹤</li>
+                                    <li>自動續立機制</li>
+                                </ul>
+                            `;
+                            break;
+                        case '掛單住宿系統':
+                            detailContent = `
+                                <h4>掛單住宿系統</h4>
+                                <p>全方位的寮房與床位管理系統，實現寺院掛單住宿智能化管理。支援彈性的床位配置、入住登記、退房處理，以及住宿證列印等功能。</p>
+                                <ul>
+                                    <li>視覺化床位管理</li>
+                                    <li>預訂管理功能</li>
+                                    <li>入住統計分析</li>
+                                </ul>
+                            `;
+                            break;
+                        case '雙分院管理':
+                            detailContent = `
+                                <h4>雙分院管理模組</h4>
+                                <p>為本山與台中分院特別設計的管理機制，實現資料隔離與共享並存。確保各分院業務獨立運作，同時又能共享必要資源，如蓮友基本資料等。</p>
+                                <ul>
+                                    <li>分院資料隔離</li>
+                                    <li>共用資料同步</li>
+                                    <li>跨分院整合查詢</li>
+                                </ul>
+                            `;
+                            break;
+                        case '系統管理':
+                            detailContent = `
+                                <h4>系統管理模組</h4>
+                                <p>提供完整的後台管理功能，包括使用者管理、權限控制、系統參數設定等。採用RBAC(角色基礎存取控制)模型，實現精細的權限管理。</p>
+                                <ul>
+                                    <li>多層級權限控制</li>
+                                    <li>系統健康監控</li>
+                                    <li>自動備份機制</li>
+                                </ul>
+                            `;
+                            break;
+                        default:
+                            detailContent = `<p>請點擊任一功能圓形查看詳情</p>`;
+                    }
+                    
+                    // 更新詳情區域
+                    demoDetail.innerHTML = detailContent;
+                    
+                    // 移除動畫效果
+                    setTimeout(() => {
+                        this.classList.remove('animate-pulse');
+                    }, 2000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

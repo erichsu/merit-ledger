@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>系統架構 - 功德辦理系統</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-circle">
+                    <span class="logo-text">功德</span>
+                </div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">首頁</a>
+                <a href="features.html" class="nav-link">功能展示</a>
+                <a href="architecture.html" class="nav-link active">系統架構</a>
+                <a href="pricing.html" class="nav-link">專案報價</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要內容 -->
+    <main>
+        <!-- 頁面標題 -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">系統架構</h1>
+                <p class="page-subtitle">現代化技術棧與彈性架構設計</p>
+            </div>
+        </section>
+
+        <!-- 架構概述 -->
+        <section class="architecture-overview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">架構概述</h2>
+                    <p class="section-subtitle">微服務導向的多層次架構</p>
+                </div>
+                
+                <div class="architecture-intro">
+                    <p class="intro-text">
+                        功德辦理系統採用現代化的微服務架構，結合先進的前後端分離設計，實現高可擴展性、高可用性和高安全性。
+                        系統架構分為七大層次，從前端應用到基礎設施，形成完整的技術生態系統。特別針對雙分院業務需求，
+                        設計獨特的資料隔離與共享機制，同時兼顧性能與維護性。
+                    </p>
+                </div>
+                
+                <div class="architecture-diagram">
+                    <h3 class="diagram-title">七層架構設計</h3>
+                    <div class="architecture-layers">
+                        <div class="architecture-layer" data-layer="1">
+                            <span class="layer-name">前端應用層</span>
+                            <div class="layer-detail">
+                                <p>基於 Nuxt.js 與 Vue.js 的前端框架，實現 SPA 與 SSR 混合渲染</p>
+                            </div>
+                        </div>
+                        <div class="architecture-layer" data-layer="2">
+                            <span class="layer-name">API 閘道層</span>
+                            <div class="layer-detail">
+                                <p>API 路由、請求轉發、安全控制、快取管理與負載均衡</p>
+                            </div>
+                        </div>
+                        <div class="architecture-layer" data-layer="3">
+                            <span class="layer-name">應用服務層</span>
+                            <div class="layer-detail">
+                                <p>業務微服務模組、事件驅動架構、領域驅動設計</p>
+                            </div>
+                        </div>
+                        <div class="architecture-layer" data-layer="4">
+                            <span class="layer-name">數據存取層</span>
+                            <div class="layer-detail">
+                                <p>GraphQL API、數據訪問物件、ORM 映射、連接池管理</p>
+                            </div>
+                        </div>
+                        <div class="architecture-layer" data-layer="5">
+                            <span class="layer-name">數據持久層</span>
+                            <div class="layer-detail">
+                                <p>PostgreSQL 關係型數據庫、Redis 快取、分佈式事務管理</p>
+                            </div>
+                        </div>
+                        <div class="architecture-layer" data-layer="6">
+                            <span class="layer-name">基礎服務層</span>
+                            <div class="layer-detail">
+                                <p>身份驗證、授權、日誌、監控、通知、排程任務、檔案存儲</p>
+                            </div>
+                        </div>
+                        <div class="architecture-layer" data-layer="7">
+                            <span class="layer-name">基礎設施層</span>
+                            <div class="layer-detail">
+                                <p>Docker 容器化、Kubernetes 編排、雲端部署、自動擴縮容</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技術棧詳情 -->
+        <section class="tech-stack">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">技術棧詳情</h2>
+                    <p class="section-subtitle">現代化技術選型，確保系統穩定與未來擴展性</p>
+                </div>
+                
+                <div class="tech-stack-grid">
+                    <!-- 前端技術 -->
+                    <div class="tech-stack-card">
+                        <div class="tech-stack-header">
+                            <div class="tech-stack-icon">🖥️</div>
+                            <h3>前端技術</h3>
+                        </div>
+                        <ul class="tech-stack-list">
+                            <li>
+                                <span class="tech-name">Nuxt.js</span>
+                                <span class="tech-desc">Vue.js 框架，提供 SSR/SSG 支援</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">Vue.js 3</span>
+                                <span class="tech-desc">組件化前端框架，使用 Composition API</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">Quasar UI</span>
+                                <span class="tech-desc">高品質 Vue 組件庫，豐富的 UI 控件</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">Pinia</span>
+                                <span class="tech-desc">Vue 狀態管理庫，替代 Vuex</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">Vue Router</span>
+                                <span class="tech-desc">Vue.js 官方路由管理器</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">TypeScript</span>
+                                <span class="tech-desc">靜態類型檢查，提高代碼質量</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 後端技術 -->
+                    <div class="tech-stack-card">
+                        <div class="tech-stack-header">
+                            <div class="tech-stack-icon">⚙️</div>
+                            <h3>後端技術</h3>
+                        </div>
+                        <ul class="tech-stack-list">
+                            <li>
+                                <span class="tech-name">Node.js</span>
+                                <span class="tech-desc">JavaScript 運行時環境</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">NestJS</span>
+                                <span class="tech-desc">Node.js 企業級應用框架</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">GraphQL</span>
+                                <span class="tech-desc">API 查詢語言，靈活資料獲取</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">TypeORM</span>
+                                <span class="tech-desc">TypeScript ORM 框架</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">Express</span>
+                                <span class="tech-desc">Node.js Web 應用框架</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">Passport.js</span>
+                                <span class="tech-desc">認證中間件，多種認證策略</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 數據存儲 -->
+                    <div class="tech-stack-card">
+                        <div class="tech-stack-header">
+                            <div class="tech-stack-icon">💾</div>
+                            <h3>數據存儲</h3>
+                        </div>
+                        <ul class="tech-stack-list">
+                            <li>
+                                <span class="tech-name">PostgreSQL</span>
+                                <span class="tech-desc">主要關係型數據庫</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">Redis</span>
+                                <span class="tech-desc">快取與會話存儲</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">MinIO</span>
+                                <span class="tech-desc">對象存儲，文件管理</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">TimescaleDB</span>
+                                <span class="tech-desc">時序數據擴展（監控數據）</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">PgAdmin</span>
+                                <span class="tech-desc">PostgreSQL 管理工具</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 部署與運維 -->
+                    <div class="tech-stack-card">
+                        <div class="tech-stack-header">
+                            <div class="tech-stack-icon">🚀</div>
+                            <h3>部署與運維</h3>
+                        </div>
+                        <ul class="tech-stack-list">
+                            <li>
+                                <span class="tech-name">Docker</span>
+                                <span class="tech-desc">容器化技術</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">Kubernetes</span>
+                                <span class="tech-desc">容器編排管理</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">NGINX</span>
+                                <span class="tech-desc">Web 伺服器與反向代理</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">GitHub Actions</span>
+                                <span class="tech-desc">CI/CD 自動化流程</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">Prometheus</span>
+                                <span class="tech-desc">監控系統</span>
+                            </li>
+                            <li>
+                                <span class="tech-name">Grafana</span>
+                                <span class="tech-desc">數據可視化與監控</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 系統核心設計 -->
+        <section class="core-design">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">系統核心設計</h2>
+                    <p class="section-subtitle">創新架構解決方案，滿足寺院特殊需求</p>
+                </div>
+                
+                <div class="design-features">
+                    <!-- 雙分院架構 -->
+                    <div class="design-feature">
+                        <div class="design-feature-icon">🏯</div>
+                        <div class="design-feature-content">
+                            <h3>雙分院架構設計</h3>
+                            <p>
+                                針對本山與台中分院的雙分院運作模式，設計特殊的資料隔離與共享機制。系統採用多租戶架構 (Multi-tenancy) 
+                                搭配共享數據庫設計，實現業務數據隔離與基礎數據共享。每個分院擁有獨立的資料存取權限，
+                                同時又能共享蓮友基本資料、法會範本等公共資源。
+                            </p>
+                            <div class="design-feature-diagram">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8IS0tIOWfuumhjCAtLT4KICA8cmVjdCB4PSI1MCIgeT0iMzAiIHdpZHRoPSIzMDAiIGhlaWdodD0iMTQwIiBmaWxsPSIjZjVmNWY1IiBzdHJva2U9IiNjY2MiIHN0cm9rZS13aWR0aD0iMiIgcng9IjUiIC8+CgogIDwhLS0g5YWx5Lqk5pWw5o2u5bqrIC0tPgogIDxyZWN0IHg9IjcwIiB5PSI1MCIgd2lkdGg9IjExMCIgaGVpZ2h0PSIzMCIgZmlsbD0iI0Q0QUYzNyIgcng9IjUiIC8+CiAgPHRleHQgeD0iMTI1IiB5PSI3MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiI+5YWx55So5LiB5pys6LOH5paZPC90ZXh0PgoKICA8IS0tIOacg+WToeizh+aWmSAtLT4KICA8cmVjdCB4PSI3MCIgeT0iMTAwIiB3aWR0aD0iODAiIGhlaWdodD0iNTAiIGZpbGw9IiM5OTAwMDAiIHJ4PSI1IiAvPgogIDx0ZXh0IHg9IjExMCIgeT0iMTI1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj7mnIPluILliIbpmaI8L3RleHQ+CgogIDwhLS0g5pys5bGx6LOH5paZIC0tPgogIDxyZWN0IHg9IjIzMCIgeT0iMTAwIiB3aWR0aD0iODAiIGhlaWdodD0iNTAiIGZpbGw9IiM5OTAwMDAiIHJ4PSI1IiAvPgogIDx0ZXh0IHg9IjI3MCIgeT0iMTI1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj7mnKzlsbHliIbpmaI8L3RleHQ+CgogIDwhLS0g6YCZ57ea57OpIC0tPgogIDxsaW5lIHgxPSIxMTAiIHkxPSI4MCIgeDI9IjExMCIgeTI9IjEwMCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiIC8+CiAgPGxpbmUgeDE9IjE0MCIgeTE9IjY1IiB4Mj0iMjcwIiB5Mj0iNjUiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDxsaW5lIHgxPSIyNzAiIHkxPSI2NSIgeDI9IjI3MCIgeTI9IjEwMCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjwvc3ZnPg==" alt="雙分院架構示意圖" class="svg-diagram">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 微服務架構 -->
+                    <div class="design-feature">
+                        <div class="design-feature-icon">🧩</div>
+                        <div class="design-feature-content">
+                            <h3>微服務架構設計</h3>
+                            <p>
+                                系統採用微服務架構，將各功能模組拆分為獨立的服務，各自負責特定的業務領域。每個微服務可以獨立開發、
+                                部署和擴展，大幅提高系統的可維護性和擴展性。服務間通過 API 閘道進行通訊，並使用事件驅動模式實現鬆耦合。
+                                微服務架構使系統能夠根據業務需求靈活調整和擴展，同時確保高可用性。
+                            </p>
+                            <div class="design-feature-diagram">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8IS0tIOiDjOaZryAtLT4KICA8cmVjdCB4PSIyMCIgeT0iMjAiIHdpZHRoPSIzNjAiIGhlaWdodD0iMTYwIiBmaWxsPSIjZjVmNWY1IiBzdHJva2U9IiNjY2MiIHN0cm9rZS13aWR0aD0iMiIgcng9IjUiIC8+CgogIDwhLS0gQVBJIOmXreWQjSAtLT4KICA8cmVjdCB4PSIxNDAiIHk9IjQwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjMwIiBmaWxsPSIjRDRBRjM3IiByeD0iNSIgLz4KICA8dGV4dCB4PSIyMDAiIHk9IjYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj5BUEkg6Zet5ZCNICsgR3JhcGhRTDwvdGV4dD4KCiAgPCEtLSDlvILmraXmnI3liqEgLS0+CiAgPHJlY3QgeD0iMzAiIHk9IjExMCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjUwIiBmaWxsPSIjOTkwMDAwIiByeD0iNSIgLz4KICA8dGV4dCB4PSI3MCIgeT0iMTM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj7mnI3liqHliIblibI8L3RleHQ+CgogIDwhLS0g5oSf5pysIC0tPgogIDxyZWN0IHg9IjEyMCIgeT0iMTEwIiB3aWR0aD0iODAiIGhlaWdodD0iNTAiIGZpbGw9IiM5OTAwMDAiIHJ4PSI1IiAvPgogIDx0ZXh0IHg9IjE2MCIgeT0iMTM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj7mhJ/mnKzos4fmlpk8L3RleHQ+CgogIDwhLS0g5oCn5LmfIC0tPgogIDxyZWN0IHg9IjIxMCIgeT0iMTEwIiB3aWR0aD0iODAiIGhlaWdodD0iNTAiIGZpbGw9IiM5OTAwMDAiIHJ4PSI1IiAvPgogIDx0ZXh0IHg9IjI1MCIgeT0iMTM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj7mjoXnrb7ns7vnu588L3RleHQ+CgogIDwhLS0g5o6l6KemIC0tPgogIDxyZWN0IHg9IjMwMCIgeT0iMTEwIiB3aWR0aD0iODAiIGhlaWdodD0iNTAiIGZpbGw9IiM5OTAwMDAiIHJ4PSI1IiAvPgogIDx0ZXh0IHg9IjM0MCIgeT0iMTM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj7mjqXop6bmlrnlkJE8L3RleHQ+CgogIDwhLS0g6YCZ57ea57OpIC0tPgogIDxsaW5lIHgxPSI3MCIgeTE9IjExMCIgeDI9IjcwIiB5Mj0iODAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDxsaW5lIHgxPSI3MCIgeTE9IjgwIiB4Mj0iMTQwIiB5Mj0iODAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDxsaW5lIHgxPSIxNjAiIHkxPSIxMTAiIHgyPSIxNjAiIHkyPSI4MCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiIC8+CiAgPGxpbmUgeDE9IjE2MCIgeTE9IjgwIiB4Mj0iMTYwIiB5Mj0iNzAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDxsaW5lIHgxPSIyNTAiIHkxPSIxMTAiIHgyPSIyNTAiIHkyPSI4MCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiIC8+CiAgPGxpbmUgeDE9IjI1MCIgeTE9IjgwIiB4Mj0iMjQwIiB5Mj0iNzAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDxsaW5lIHgxPSIzNDAiIHkxPSIxMTAiIHgyPSIzNDAiIHkyPSI4MCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiIC8+CiAgPGxpbmUgeDE9IjM0MCIgeTE9IjgwIiB4Mj0iMjYwIiB5Mj0iNzAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgo8L3N2Zz4=" alt="微服務架構示意圖" class="svg-diagram">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 資料庫設計 -->
+                    <div class="design-feature">
+                        <div class="design-feature-icon">🗃️</div>
+                        <div class="design-feature-content">
+                            <h3>資料庫設計</h3>
+                            <p>
+                                系統資料庫採用 PostgreSQL 關係型資料庫，具有強大的事務處理能力和資料完整性保障。為支援雙分院業務模式，
+                                資料庫採用租戶識別欄位 (Tenant ID) 設計，物理共享但邏輯隔離。採用 Schema 級別的資料組織，
+                                實現跨分院資料安全隔離。同時，系統使用 Redis 進行快取管理，提升查詢效能，並通過 MinIO 對象存儲管理文件資源。
+                            </p>
+                            <div class="design-feature-diagram">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8IS0tIOiDjOaZryAtLT4KICA8cmVjdCB4PSIyMCIgeT0iMjAiIHdpZHRoPSIzNjAiIGhlaWdodD0iMTYwIiBmaWxsPSIjZjVmNWY1IiBzdHJva2U9IiNjY2MiIHN0cm9rZS13aWR0aD0iMiIgcng9IjUiIC8+CgogIDwhLS0g5YWx5Lqk5qCH5q2iIC0tPgogIDxyZWN0IHg9IjMwIiB5PSI0MCIgd2lkdGg9IjM0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI0Q0QUYzNyIgcng9IjUiIC8+CiAgPHRleHQgeD0iMjAwIiB5PSI2NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiI+5YWx5Lqk6Ieo5LiB5pys6LOH5paZIChQb3N0Z3JlU1FMKTwvdGV4dD4KCiAgPCEtLSDmnIPluILlkI3ln58gLS0+CiAgPHJlY3QgeD0iMzAiIHk9IjEwMCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzk5MDAwMCIgcng9IjUiIC8+CiAgPHRleHQgeD0iMTEwIiB5PSIxMzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPuacg+W4guWIhumZouWQjeepuiAoU2NoZW1hKTwvdGV4dD4KCiAgPCEtLSDmnKzlsbHlkI3ln58gLS0+CiAgPHJlY3QgeD0iMjEwIiB5PSIxMDAiIHdpZHRoPSIxNjAiIGhlaWdodD0iNjAiIGZpbGw9IiM5OTAwMDAiIHJ4PSI1IiAvPgogIDx0ZXh0IHg9IjI5MCIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj7mnKzlsbHliIbpmaLlkI3nqbogKFNjaGVtYSk8L3RleHQ+CgogIDwhLS0g6YCZ57ea57OpIC0tPgogIDxsaW5lIHgxPSIxMTAiIHkxPSIxMDAiIHgyPSIxMTAiIHkyPSI4MCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiIC8+CiAgPGxpbmUgeDE9IjI5MCIgeTE9IjEwMCIgeDI9IjI5MCIgeTI9IjgwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgLz4KPC9zdmc+" alt="資料庫設計示意圖" class="svg-diagram">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 系統部署架構 -->
+        <section class="deployment-architecture">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">系統部署架構</h2>
+                    <p class="section-subtitle">容器化部署，高可用性架構</p>
+                </div>
+                
+                <div class="deployment-content">
+                    <div class="deployment-info">
+                        <p>
+                            系統採用容器化部署架構，利用 Docker 進行應用程式封裝，Kubernetes 實現容器編排與管理。
+                            整個系統可部署於公有雲平台（如 AWS、Azure、GCP）或私有雲環境，根據需求進行彈性擴展。
+                            系統架構支援高可用性 (HA) 設計，包含負載均衡、自動擴縮容、健康檢查與故障轉移等機制，
+                            確保系統在各種情況下都能穩定運行。
+                        </p>
+                        
+                        <div class="deployment-features">
+                            <div class="deployment-feature">
+                                <div class="feature-icon">⚖️</div>
+                                <div class="feature-text">
+                                    <h4>負載均衡</h4>
+                                    <p>NGINX 負載均衡器，實現請求分發與流量控制</p>
+                                </div>
+                            </div>
+                            <div class="deployment-feature">
+                                <div class="feature-icon">📈</div>
+                                <div class="feature-text">
+                                    <h4>自動擴縮容</h4>
+                                    <p>根據系統負載動態調整資源配置，提升資源利用率</p>
+                                </div>
+                            </div>
+                            <div class="deployment-feature">
+                                <div class="feature-icon">🔄</div>
+                                <div class="feature-text">
+                                    <h4>故障轉移</h4>
+                                    <p>自動故障偵測與轉移機制，確保服務連續性</p>
+                                </div>
+                            </div>
+                            <div class="deployment-feature">
+                                <div class="feature-icon">📊</div>
+                                <div class="feature-text">
+                                    <h4>監控與警報</h4>
+                                    <p>Prometheus + Grafana 監控系統，實時監測系統狀態</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="deployment-diagram">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8IS0tIOiDjOaZryAtLT4KICA8cmVjdCB4PSIyMCIgeT0iMjAiIHdpZHRoPSIzNjAiIGhlaWdodD0iMjYwIiBmaWxsPSIjZjVmNWY1IiBzdHJva2U9IiNjY2MiIHN0cm9rZS13aWR0aD0iMiIgcng9IjUiIC8+CgogIDwhLS0g5Lqk6YeP5Y+w5bGPIC0tPgogIDxyZWN0IHg9IjQwIiB5PSI0MCIgd2lkdGg9IjMyMCIgaGVpZ2h0PSI0MCIgZmlsbD0iI0Q0QUYzNyIgcng9IjUiIC8+CiAgPHRleHQgeD0iMjAwIiB5PSI2NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiI+TkdJTlgg6LGG6L+Q6YyE6KOV5ZmpICsgTG9hZCBCYWxhbmNlcjwvdGV4dD4KCiAgPCEtLSBLdWJlcm5ldGVzIOeah+WKtuW5suWiqOadr+iHquaYoOe2suiogSAtLT4KICA8cmVjdCB4PSI0MCIgeT0iMTAwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjMzMzMzMzIiByeD0iNSIgLz4KICA8dGV4dCB4PSIyMDAiIHk9IjEyNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiI+S3ViZXJuZXRlcyDnmoflirbluqbpkqXoirHoh6rmqJDntrLohqA8L3RleHQ+CgogIDwhLS0g5a6i6KOF5YuZIC0tPgogIDxyZWN0IHg9IjQwIiB5PSIxNjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjOTkwMDAwIiByeD0iNSIgLz4KICA8dGV4dCB4PSI5MCIgeT0iMjEwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj7liY3nq68KICBEb2NrZXIg5a6i5oi3PC90ZXh0PgoKICA8IS0tIOW+jOerryAtLT4KICA8cmVjdCB4PSIxNTAiIHk9IjE2MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiM5OTAwMDAiIHJ4PSI1IiAvPgogIDx0ZXh0IHg9IjIwMCIgeT0iMjEwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj7lvoznq68KICBEb2NrZXIg5a6i5oi3PC90ZXh0PgoKICA8IS0tIOi8r+WKqeWuouiwoSAtLT4KICA8cmVjdCB4PSIyNjAiIHk9IjE2MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiM5OTAwMDAiIHJ4PSI1IiAvPgogIDx0ZXh0IHg9IjMxMCIgeT0iMjEwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj7mj5DnrqHnm7jlt7UK44CBNCAgRG9ja2VyIOWuouaIt+a3oeefpTwvdGV4dD4KCiAgPCEtLSDpgJnnrZrnvLcgLS0+CiAgPGxpbmUgeDE9IjkwIiB5MT0iMTYwIiB4Mj0iOTAiIHkyPSIxNDAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDxsaW5lIHgxPSIyMDAiIHkxPSIxNjAiIHgyPSIyMDAiIHkyPSIxNDAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDxsaW5lIHgxPSIzMTAiIHkxPSIxNjAiIHgyPSIzMTAiIHkyPSIxNDAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDxsaW5lIHgxPSIyMDAiIHkxPSIxMDAiIHgyPSIyMDAiIHkyPSI4MCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjwvc3ZnPg==" alt="系統部署架構示意圖" class="svg-diagram deployment-svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 系統安全性 -->
+        <section class="security-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">系統安全性</h2>
+                    <p class="section-subtitle">多層次安全防護機制</p>
+                </div>
+                
+                <div class="security-features">
+                    <div class="security-feature">
+                        <div class="security-icon">🔒</div>
+                        <div class="security-content">
+                            <h3>身份驗證與授權</h3>
+                            <p>
+                                採用 OAuth 2.0 + JWT 身份驗證機制，支援多因素認證 (MFA)。
+                                基於 RBAC (角色基礎存取控制) 的權限管理，實現精細化的資源訪問控制。
+                                支援 API 請求簽名與時效性控制，防止請求被竄改或重放攻擊。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="security-feature">
+                        <div class="security-icon">🛡️</div>
+                        <div class="security-content">
+                            <h3>資料安全</h3>
+                            <p>
+                                採用 TLS/SSL 加密所有傳輸中的資料，確保通訊安全。
+                                敏感資料（如密碼）使用 bcrypt 等強加密算法存儲。
+                                定期資料備份與異地備援，實現災難復原能力。
+                                資料訪問審計記錄，追蹤敏感操作。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="security-feature">
+                        <div class="security-icon">🔍</div>
+                        <div class="security-content">
+                            <h3>安全監控與防護</h3>
+                            <p>
+                                部署 WAF (Web 應用防火牆) 防止常見 Web 攻擊，如 SQL 注入、XSS 等。
+                                實時安全監控與異常檢測，及時發現可疑行為。
+                                定期安全漏洞掃描與滲透測試，主動發現並修復安全隱患。
+                                DDoS 防護機制，確保系統穩定運行。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <div class="cta-circle">
+                        <div class="cta-icon">💰</div>
+                    </div>
+                    <h2>了解專案實施細節與報價？</h2>
+                    <p>查看詳細的專案規劃、時程與預算資訊</p>
+                    <div class="cta-buttons">
+                        <a href="pricing.html" class="btn btn-primary">
+                            <span>專案報價</span>
+                            <div class="btn-icon">→</div>
+                        </a>
+                        <a href="features.html" class="btn btn-outline">
+                            <span>返回功能展示</span>
+                            <div class="btn-icon">↩</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 頁腳 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-circle">
+                            <span class="logo-text">功德</span>
+                        </div>
+                    </div>
+                    <p>專業的功德辦理系統解決方案，致力於寺院數位化轉型。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速連結</h4>
+                    <ul class="footer-links">
+                        <li><a href="features.html">功能展示</a></li>
+                        <li><a href="architecture.html">系統架構</a></li>
+                        <li><a href="pricing.html">專案報價</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>聯絡資訊</h4>
+                    <ul class="footer-contact">
+                        <li>📧 contact@merit-system.com</li>
+                        <li>📞 +886-2-1234-5678</li>
+                        <li>📍 台北市信義區</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>技術支援</h4>
+                    <ul class="footer-links">
+                        <li><a href="#support">技術文件</a></li>
+                        <li><a href="#training">教育訓練</a></li>
+                        <li><a href="#maintenance">維護服務</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 功德辦理系統. 版權所有</p>
+                    <div class="footer-badges">
+                        <span class="tech-badge">Nuxt.js</span>
+                        <span class="tech-badge">GraphQL</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // 架構頁面特定腳本
+        document.addEventListener('DOMContentLoaded', function() {
+            // 架構層級交互效果
+            const layers = document.querySelectorAll('.architecture-layer');
+            
+            layers.forEach(layer => {
+                layer.addEventListener('mouseenter', function() {
+                    this.classList.add('layer-highlight');
+                });
+                
+                layer.addEventListener('mouseleave', function() {
+                    this.classList.remove('layer-highlight');
+                });
+            });
+            
+            // 技術棧卡片交互效果
+            const techCards = document.querySelectorAll('.tech-stack-card');
+            
+            techCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = 'var(--shadow-lg)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                    this.style.boxShadow = 'var(--shadow-md)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
