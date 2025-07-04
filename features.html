@@ -1253,24 +1253,16 @@
             const demoCircles = document.querySelectorAll('.demo-circle');
             const demoDetail = document.getElementById('demo-detail');
             
-            demoCircles.forEach(circle => {
-                circle.addEventListener('click', function() {
-                    // 添加點擊效果
-                    this.classList.add('animate-pulse');
-                    
-                    // 取得功能名稱和演示面板ID
-                    const feature = this.getAttribute('data-feature');
-                    const demoId = this.getAttribute('data-demo');
-                    
-                    // 如果有演示面板ID，打開對應的面板
-                    if (demoId) {
-                        openDemoPanel(demoId);
-                    }
-                    
-                    // 根據功能顯示不同內容
-                    let detailContent = '';
-                    switch(feature) {
-                        case '基本資料管理':
+            // 定義顯示詳情的函數（hover 時顯示簡介）
+            function showFeatureDetail(feature, isClick = false) {
+                let detailContent = '';
+                let demoId = '';
+                
+                // 根據功能取得對應的 demo ID
+                switch(feature) {
+                    case '基本資料管理':
+                        demoId = 'member-management';
+                        if (isClick) {
                             detailContent = `
                                 <h4>基本資料管理模組</h4>
                                 <p>本模組提供完整的蓮友資料管理功能，支援多層級群組架構，實現複雜的組織關係管理。特別設計能處理寺院特殊的群組關係需求，如皈依關係、家族關係、地區分組等。</p>
@@ -1279,9 +1271,28 @@
                                     <li>彈性群組結構</li>
                                     <li>全文檢索搜尋</li>
                                 </ul>
+                                <div class="detail-features">
+                                    <h5>進階功能：</h5>
+                                    <ul>
+                                        <li>批次匯入匯出功能</li>
+                                        <li>自訂欄位設定</li>
+                                        <li>群組權限管理</li>
+                                        <li>資料變更歷程追蹤</li>
+                                    </ul>
+                                </div>
+                                <button class="demo-btn primary" onclick="openDemoPanel('${demoId}')">查看更多 →</button>
                             `;
-                            break;
-                        case '法會功德系統':
+                        } else {
+                            detailContent = `
+                                <h4>基本資料管理模組</h4>
+                                <p>完整的蓮友資料管理系統，支援多層級群組結構與複雜關聯。</p>
+                                <p class="demo-hint">點擊圓形查看更多功能...</p>
+                            `;
+                        }
+                        break;
+                    case '法會功德系統':
+                        demoId = 'merit-system';
+                        if (isClick) {
                             detailContent = `
                                 <h4>法會功德系統</h4>
                                 <p>專為佛教寺院設計的法會管理模組，支援各類法會功德項目設定，簡化牌位管理流程。系統支援批次處理與多種牌位格式，適應不同法會類型需求。</p>
@@ -1290,9 +1301,28 @@
                                     <li>歷史資料沿用</li>
                                     <li>大量列印支援</li>
                                 </ul>
+                                <div class="detail-features">
+                                    <h5>進階功能：</h5>
+                                    <ul>
+                                        <li>法會排程管理</li>
+                                        <li>功德項目模板設定</li>
+                                        <li>自動續立提醒</li>
+                                        <li>統計報表生成</li>
+                                    </ul>
+                                </div>
+                                <button class="demo-btn primary" onclick="openDemoPanel('${demoId}')">查看更多 →</button>
                             `;
-                            break;
-                        case '報名繳費系統':
+                        } else {
+                            detailContent = `
+                                <h4>法會功德系統</h4>
+                                <p>全方位法會規劃與功德管理，簡化牌位作業流程。</p>
+                                <p class="demo-hint">點擊圓形查看更多功能...</p>
+                            `;
+                        }
+                        break;
+                    case '報名繳費系統':
+                        demoId = 'payment-system';
+                        if (isClick) {
                             detailContent = `
                                 <h4>報名繳費系統</h4>
                                 <p>整合線上與現場報名流程，提供完整的繳費管理功能。支援多種繳費方式，自動收據產生，以及智能續立提醒，大幅減少行政作業負擔。</p>
@@ -1301,9 +1331,28 @@
                                     <li>繳費狀態追蹤</li>
                                     <li>自動續立機制</li>
                                 </ul>
+                                <div class="detail-features">
+                                    <h5>進階功能：</h5>
+                                    <ul>
+                                        <li>線上金流整合</li>
+                                        <li>分期付款管理</li>
+                                        <li>退費處理流程</li>
+                                        <li>財務報表生成</li>
+                                    </ul>
+                                </div>
+                                <button class="demo-btn primary" onclick="openDemoPanel('${demoId}')">查看更多 →</button>
                             `;
-                            break;
-                        case '掛單住宿系統':
+                        } else {
+                            detailContent = `
+                                <h4>報名繳費系統</h4>
+                                <p>智能化的功德報名與繳費管理，支援多種繳費方式。</p>
+                                <p class="demo-hint">點擊圓形查看更多功能...</p>
+                            `;
+                        }
+                        break;
+                    case '掛單住宿系統':
+                        demoId = 'accommodation-system';
+                        if (isClick) {
                             detailContent = `
                                 <h4>掛單住宿系統</h4>
                                 <p>全方位的寮房與床位管理系統，實現寺院掛單住宿智能化管理。支援彈性的床位配置、入住登記、退房處理，以及住宿證列印等功能。</p>
@@ -1312,9 +1361,28 @@
                                     <li>預訂管理功能</li>
                                     <li>入住統計分析</li>
                                 </ul>
+                                <div class="detail-features">
+                                    <h5>進階功能：</h5>
+                                    <ul>
+                                        <li>床位使用率分析</li>
+                                        <li>清潔維護排程</li>
+                                        <li>長期掛單管理</li>
+                                        <li>費用計算設定</li>
+                                    </ul>
+                                </div>
+                                <button class="demo-btn primary" onclick="openDemoPanel('${demoId}')">查看更多 →</button>
                             `;
-                            break;
-                        case '雙分院管理':
+                        } else {
+                            detailContent = `
+                                <h4>掛單住宿系統</h4>
+                                <p>完整的寮房管理與住宿安排，提升住宿管理效率。</p>
+                                <p class="demo-hint">點擊圓形查看更多功能...</p>
+                            `;
+                        }
+                        break;
+                    case '雙分院管理':
+                        demoId = 'temple-management';
+                        if (isClick) {
                             detailContent = `
                                 <h4>雙分院管理模組</h4>
                                 <p>為本山與台中分院特別設計的管理機制，實現資料隔離與共享並存。確保各分院業務獨立運作，同時又能共享必要資源，如蓮友基本資料等。</p>
@@ -1323,9 +1391,28 @@
                                     <li>共用資料同步</li>
                                     <li>跨分院整合查詢</li>
                                 </ul>
+                                <div class="detail-features">
+                                    <h5>進階功能：</h5>
+                                    <ul>
+                                        <li>分院權限設定</li>
+                                        <li>資料同步排程</li>
+                                        <li>衝突處理機制</li>
+                                        <li>整合報表功能</li>
+                                    </ul>
+                                </div>
+                                <button class="demo-btn primary" onclick="openDemoPanel('${demoId}')">查看更多 →</button>
                             `;
-                            break;
-                        case '系統管理':
+                        } else {
+                            detailContent = `
+                                <h4>雙分院管理模組</h4>
+                                <p>本山與台中分院資料隔離與共享機制，確保業務獨立性。</p>
+                                <p class="demo-hint">點擊圓形查看更多功能...</p>
+                            `;
+                        }
+                        break;
+                    case '系統管理':
+                        demoId = 'system-management';
+                        if (isClick) {
                             detailContent = `
                                 <h4>系統管理模組</h4>
                                 <p>提供完整的後台管理功能，包括使用者管理、權限控制、系統參數設定等。採用RBAC(角色基礎存取控制)模型，實現精細的權限管理。</p>
@@ -1334,20 +1421,93 @@
                                     <li>系統健康監控</li>
                                     <li>自動備份機制</li>
                                 </ul>
+                                <div class="detail-features">
+                                    <h5>進階功能：</h5>
+                                    <ul>
+                                        <li>操作日誌審計</li>
+                                        <li>系統效能監控</li>
+                                        <li>資料備份還原</li>
+                                        <li>安全性設定</li>
+                                    </ul>
+                                </div>
+                                <button class="demo-btn primary" onclick="openDemoPanel('${demoId}')">查看更多 →</button>
                             `;
-                            break;
-                        default:
-                            detailContent = `<p>請點擊任一功能圓形查看詳情</p>`;
+                        } else {
+                            detailContent = `
+                                <h4>系統管理模組</h4>
+                                <p>全方位的系統設定與維護功能，確保系統穩定運行。</p>
+                                <p class="demo-hint">點擊圓形查看更多功能...</p>
+                            `;
+                        }
+                        break;
+                    default:
+                        detailContent = `<p>請將滑鼠移至功能圓形查看詳情</p>`;
+                }
+                
+                // 更新詳情區域
+                demoDetail.innerHTML = detailContent;
+            }
+            
+            // 追蹤當前選中的圓形
+            let activeCircle = null;
+            
+            demoCircles.forEach(circle => {
+                // Hover 事件 - 顯示簡介說明
+                circle.addEventListener('mouseenter', function() {
+                    // 如果沒有選中的圓形，顯示 hover 說明
+                    if (!activeCircle) {
+                        const feature = this.getAttribute('data-feature');
+                        showFeatureDetail(feature, false);
+                    }
+                });
+                
+                // Mouse leave 事件 - 恢復預設或保持點擊狀態
+                circle.addEventListener('mouseleave', function() {
+                    // 如果沒有選中的圓形，顯示預設內容
+                    if (!activeCircle) {
+                        demoDetail.innerHTML = '<p>請將滑鼠移至功能圓形查看詳情</p>';
+                    }
+                });
+                
+                // Click 事件 - 顯示詳細說明和查看更多按鈕
+                circle.addEventListener('click', function() {
+                    // 移除之前選中的狀態
+                    if (activeCircle) {
+                        activeCircle.classList.remove('active-circle');
                     }
                     
-                    // 更新詳情區域
-                    demoDetail.innerHTML = detailContent;
+                    // 如果點擊同一個圓形，取消選擇
+                    if (activeCircle === this) {
+                        activeCircle = null;
+                        demoDetail.innerHTML = '<p>請將滑鼠移至功能圓形查看詳情</p>';
+                        return;
+                    }
                     
-                    // 移除動畫效果
+                    // 設置新的選中狀態
+                    activeCircle = this;
+                    this.classList.add('active-circle');
+                    
+                    // 顯示詳細內容
+                    const feature = this.getAttribute('data-feature');
+                    showFeatureDetail(feature, true);
+                    
+                    // 添加點擊動畫
+                    this.classList.add('animate-pulse');
                     setTimeout(() => {
                         this.classList.remove('animate-pulse');
                     }, 600);
                 });
+            });
+            
+            // 點擊容器其他地方時取消選擇
+            document.querySelector('.demo-container').addEventListener('click', function(e) {
+                if (!e.target.closest('.demo-circle') && !e.target.closest('.demo-detail')) {
+                    if (activeCircle) {
+                        activeCircle.classList.remove('active-circle');
+                        activeCircle = null;
+                        demoDetail.innerHTML = '<p>請將滑鼠移至功能圓形查看詳情</p>';
+                    }
+                }
             });
         });
 
